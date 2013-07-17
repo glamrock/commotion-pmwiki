@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+
+<!-- This file is part of commotion -->
+<!-- Reference: http://en.gentoo-wiki.com/wiki/Avahi#Custom_Services -->
+<!-- Reference: http://wiki.xbmc.org/index.php?title=Avahi_Zeroconf -->
+
+<service-group>
+  <name replace-wildcards="yes">Service Name on %h</name>
+
+  <service>
+    <type>_https._tcp</type> <!-- _svc-type.sub-type._tcp|udp -->
+    <domain-name>mesh.local</domain-name>
+    <txt-record>application=PmWiki</txt-record>
+    <txt-record>ttl=3</txt-record> <!--optional: how many hops away the service should be advertised-->
+    <txt-record>ipaddr=http://localhost/pmwiki/pmwiki.php</txt-record> <!-- IP address or URL of service host -->
+    <txt-record>type=collaboration</txt-record>
+    <txt-record>fingerprint=xx</txt-record>
+    <txt-record>signature=xx</txt-record>
+    <txt-record>icon=https://exampleapplication.com/icon.png</txt-record>
+    <txt-record>description=Commotion is an open-source communication tool that uses mobile phones, computers, and other wireless devices to create decentralized mesh networks.</txt-record>
+
+  </service>
+</service-group>
