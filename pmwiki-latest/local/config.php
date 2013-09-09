@@ -5,6 +5,9 @@ $PageLogoUrl = "co.png";
 #Favicon -CHECK^
 #$Favicon = "favicon.ico";
 
+#Set the skin name, which is the name of the folder in pub/skins/
+$Skin = 'CoTheme';
+
 #this is the default admin password
 $DefaultPasswords['admin'] = crypt('default');
 
