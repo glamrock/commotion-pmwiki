@@ -6,7 +6,7 @@ $PageLogoUrl = "co.png";
 #$Favicon = "favicon.ico";
 
 #Set the skin name, which is the name of the folder in pub/skins/
-$Skin = 'CoTheme';
+$Skin = 'pmwiki';
 
 #this is the default admin password
 $DefaultPasswords['admin'] = crypt('default');
@@ -14,17 +14,17 @@ $DefaultPasswords['admin'] = crypt('default');
 #set to 0 if you want to prevent file uploads
 $EnableUpload = 1;
 #this is the default upload password
-$DefaultPasswords['upload'] = crypt('upload')
+$DefaultPasswords['upload'] = crypt('upload');
 
 #Require editors to have an account (1=yes, 0=no)
 $EnablePostAuthorRequired = 0;
 
 #time format eg June 19th, 2013 at 11:11 pm
 #no time zone listed as it's being run as a local app
-$TimeFmt = '%B %d, %Y at %I:%M %p'
+$TimeFmt = '%B %d, %Y at %I:%M %p';
 
 # Remove the default "rel='nofollow'" attribute for external links.
-$UrlLinkFmt = "<a class='urllink' href='\$LinkUrl' title='\$LinkAlt'>\$LinkText</a>"
+$UrlLinkFmt = "<a class='urllink' href='\$LinkUrl' title='\$LinkAlt'>\$LinkText</a>";
 
 #include add-ons ("Cookbook" and "Scripts")
 include_once("cookbook/recipefile.php");
